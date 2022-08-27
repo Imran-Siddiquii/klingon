@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klingon</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    textarea {
+        display: block;
+        margin: 15px auto;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    h3{
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+        color: #272419;
+        font-size: 20px;
+    }
+    button{
+        display: block;
+        margin: 9px auto;
+        padding: 12px 12px;
+        font-size: 17px;
+        background-color: #f3c83c;
+        font-weight:700;
+        font-size: 19px;
+        color: antiquewhite;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    #output{
+        width: 30%;
+        min-height: 100px;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 20px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+       box-shadow: 2px 2px 3px 3px rgb(182, 176, 176);
+        font-size: 17px;
+    }
+        footer{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        background-color: #f3c83c;
+             color: white;
+             text-align: center;
+            padding: 5px 0px;
+            }
+           footer h3{
+            color: white;
+           }  
+
+        footer p{
+            display:inline-block;
+            font-size: 18px;
+            font-weight: 600;
+        }
+</style>
+
 <body>
-    <Header>Klingon talk</Header>
-</body>
-</html>
+    <header>
+        <h1 style="text-align:center;background-color:#f3c83c;padding: 10px 0; color: white;"> Klingon talk </h1>
+    </header>
+    <textarea id="txtArea"  placeholder="Enter a text in english language and show the output in klingon language"
+        cols="40" rows="8" ></textarea>
+        <button id="translate">Translate to klingon</button>
+        <h3>Translated Text</h3>
+        <div id="output"></div>
+        <footer>
+            <h3>About</h3>
+            <p>The Klingon language is the constructed language spoken by a fictional alien race, the Klingons, in the Star Trek universe.</p>
+        </footer>      
+        <script src="app.js" type="text/javascript"></script>
+            
+    </body>
+    </html>
+            
